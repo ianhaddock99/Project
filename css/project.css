@@ -1,1 +1,35 @@
 /* test */
+
+/* Grocery List*/
+#basket {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    text-align: center;
+  }
+  
+  #basketItems {
+    margin: 40px 0px 0px 20px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    border: white solid 3px;
+    text-align: center;
+  }
+  
+  form {
+    margin: 40px 50px 0px 50px;
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: white solid 3px;
+    text-align: center;
+  }
+  
+  #a {
+    background-color: none;
+    border: solid white 2px;
+  }
+  
+
+
