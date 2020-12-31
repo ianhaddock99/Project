@@ -70,7 +70,7 @@ var map = new mapboxgl.Map({
         }
     });
     var popup = new mapboxgl.Popup;
-    map.on('mouseenter', 'tilequery-points', function(e) {
+    map.on('click', 'tilequery-points', function(e) {
         map.getCanvas().style.cursor = 'pointer';
         var title = '<h3>' + e.features[0].properties.STORE_NAME + '</h3>';
         var storeType = '<h4>' + e.features[0].properties.STORE_TYPE + '</h4>';
