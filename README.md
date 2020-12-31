@@ -1,7 +1,8 @@
 ## Across This Recipe <https://loving-hugle-ae78b2.netlify.app> 
 
 This is simple app allows the user to search for different meal ideas and return the ingredients, nutrition info and recipe information. It also has a map that uses a bounding box around denver to show various grocery stores and supermarkets.
-<img src="./images/wholepage.png" width="300" height="300">
+
+<img src="./images/wholepage.png" width="700" height="500">
 
 **How To Use App**
 
@@ -16,7 +17,7 @@ To use the app simply click on the link provided above. Once on the app enter a 
 
 Our goal was to have a working base that brought up the meal cards and a working map.  We accomplished this.
 
-<img src="./images/MVP.png" width="500" height="500">
+<img src="./images/MVP.png" width="700" height="500">
 
 **Stretch Goals**
 
@@ -71,13 +72,13 @@ map.addControl(geocoder, 'top-left');
 
 **Screen Shots**
 
-<img src="./images/img1.png" width="500" height="500">
+<img src="./images/img1.png" width="700" height="500">
 
 
-<img src="./images/img2.png" width="500" height="500">
+<img src="./images/img2.png" width="700" height="500">
 
 
-<img src="./images/img3.png" width="500" height="500">
+<img src="./images/img3.png" width="700" height="500">
 
 
 **Developer Team**
