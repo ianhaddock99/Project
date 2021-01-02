@@ -49,7 +49,7 @@ function useApiData(data){
             let recipe = JSON.stringify(data.hits[number].recipe)
             document.querySelector("#content").innerHTML += `
             
-                <div class="card" style="width: 18rem;">
+                <div class="card mt-4" style="width: 18rem;">
                     <img src="${data.hits[number].recipe.image}" class="card-img-top" alt="...">
                     <div class="card-body cp-bg-gold text-white d-flex flex-column justify-content-between">
                     <div>

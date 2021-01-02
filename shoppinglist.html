@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/shoppinglist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Grocery List</title>
 </head>
 <body>
-    <!doctype html>
-<html>
-<head>
-
-	<link rel="stylesheet" type="text/css" href="project.css">
-<title></title>
-</head>
-<body>
-	<header>
-		<h1>Groceries</h1>
-	</header>
-	<section id="basket">
-		<section id="basketItems"></section>
-		<form>
-  			ITEM:
-  			<input id="a" type="text" id name="firstname"><br>
-  			
-  			<button onclick="addList()">Button</button>
-		</form>
-	</section>
-	<footer></footer>
-	<script type="text/javascript" src="project.js"></script>
+    <!-- add items -->
+    <div class="addItems-container lobster">
+        <h4 class="addItems-action">Display Action</h4>
+        <h2 class="addItems-title">Add Grocery Items</h2>
+        <form action="">
+            <input type="text" name="" id="" class="addItems-input lobster">
+            <button type="submit" class="addItems-submit lobster">Submit Here</button>
+        </form>
+    </div>
+    <!-- display items-->
+    <div class="displayItems-container lobster">
+        <h4 class="displayItems-action">Display Action</h4>
+        <h2 class="displayItems-title">Grocery Items</h2>
+        <div class="grocery-list" style=" color: white;">
+        
+        </div>
+            <!-- end grocery item -->
+			<button type="submit" class="displayItems-clear lobster button">Clear Items</button>
+			<button type="submit" class="displayItems-clear lobster button" onclick= "window.location.href='index.html'">Return to Home</button>
+        </div>
+    </div>
+    <script src="./js/shoppinglist.js"></script>
 </body>
-</html>
-</body>
-</html>
