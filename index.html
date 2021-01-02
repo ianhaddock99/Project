@@ -16,13 +16,15 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
         <!--------------------------------NAVBAR------------------------------------------------- -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 lobster">
         <nav class="navbar navbar-expand-lg cp-bg-blue fixed-top mont">
             <a class="navbar-brand cp-text-gold" href="#">Across This Recipe</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,7 +114,7 @@
             <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
 
             <div class="light mont d-flex justify-content-center">
-                <div id='map' style='width: 600px; height: 300px;'></div>
+                <div class="border" id='map' style='width: 600px; height: 300px;'></div>
             </div>
         </main>
 
