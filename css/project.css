@@ -113,10 +113,6 @@ body{
 
 
 
-.mont{
-    font-family: 'Montserrat', sans-serif;
-}
-
 .toggle-menu{
     display: none;
 }
@@ -151,12 +147,21 @@ body{
 
 }
 
-@media only screen and (min-width: 800px) and (max-width: 2000px) {
-    .search1{
-        display: none;
-        padding-top: 10px;
+    @media only screen and (min-width: 800px) and (max-width: 2000px) {
+        .search1{
+            display: none;
+            padding-top: 10px;
+        }
     }
-}
+    .lobster{
+    font-family: 'Lobster', cursive;
+    }
+
+    .card:hover{
+        transform: translateY(-20px);
+        transition: 0.2s linear;
+    }
+
 
 
 

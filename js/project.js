@@ -31,25 +31,39 @@ async function sendApiRequest(value){
     useApiData(data)
 }
 
+
 ///////GENERATES CARD WITH INFO FROM API/////////////////////
 function useApiData(data){
     document.querySelector("#content").innerHTML = "";
-    for (let i = 0;i < 5; i++) {
-        let recipe = JSON.stringify(data.hits[i].recipe)
-        document.querySelector("#content").innerHTML += `
+    const numberAlreadyGenerated = []
+    try {
+        for (let i = 0;i < 5; i++) {
+            let number = 0;
+            let found = 0;
+            while (found === number) {
+                number = Math.floor(Math.random() * 9);
+                found = numberAlreadyGenerated.find(element => element === number)
+            }
+            numberAlreadyGenerated.push(number)
         
-            <div class="card" style="width: 18rem;">
-                <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
-                <div class="card-body cp-bg-gold text-white d-flex flex-column justify-content-between">
-                <div>
-                    <h3 class="card-title">${data.hits[i].recipe.label}</h3>
-                    <p class="card-text">Health Labels: ${data.hits[i].recipe.healthLabels.join(", ")}</p>
+            let recipe = JSON.stringify(data.hits[number].recipe)
+            document.querySelector("#content").innerHTML += `
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="${data.hits[number].recipe.image}" class="card-img-top" alt="...">
+                    <div class="card-body cp-bg-gold text-white d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="card-title">${data.hits[number].recipe.label}</h3>
+                        <p class="card-text">Health Labels: ${data.hits[number].recipe.healthLabels.join(", ")}</p>
+                    </div>
+                        <button onClick="renderModal(${JSON.stringify(recipe).split('"').join("&quot;")})" type="button" class="btn btn-primary cp-bg-blue" data-toggle="modal" data-target="#modal">Full Recipe</button>
+                    </div>
                 </div>
-                    <button onClick="renderModal(${JSON.stringify(recipe).split('"').join("&quot;")})" type="button" class="btn btn-primary cp-bg-blue" data-toggle="modal" data-target="#modal">Full Recipe</button>
-                </div>
-            </div>
-        
-            `
+            
+                `
+        }
+    } catch(e) {
+        window.alert("You have reached the maximum amount of searches, please refresh the page and start again.")
     }
 }
 
