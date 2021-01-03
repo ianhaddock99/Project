@@ -26,7 +26,7 @@ body{
     text-transform: capitalize;
 }
 .addItems-title{
-    color: white;
+    color: black;
 }
 .addItems-action, .displayItems-action{
     border: 2px solid #272932;
@@ -38,11 +38,11 @@ body{
 .addItems-input{
     background: transparent;
     border: none;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid black;
     width: 100%;
     font-size: 2rem;
     padding: 0.5rem;
-    color: white;
+    color: black;
     outline: none;
     text-transform: uppercase;
 }
@@ -57,20 +57,20 @@ body{
     outline: none;
 }
 .addItems-submit{
-    color: white;
+    color: black;
     background: transparent;
-    border: 3px solid white;
+    border: 3px solid black;
     transition: all 2s ease;
 }
 .addItems-submit:hover{
     background: #B6C2D9;
-    color: white;
+    color: black;
 }
 .displayItems-container{
     background: #FCA311 ;
 }
 .displayItems-title{
-    color: white;
+    color: black;
     margin-bottom: 0.25rem;
 }
 .grocery-item{
@@ -93,7 +93,7 @@ body{
     margin-left: 0.5rem;
     font-size: 1.2rem;
     text-transform: capitalize;
-    color: white;
+    color: black;
 }
 .grocery-item__link{
     color: red;
@@ -103,14 +103,14 @@ body{
     transform: scale(2);
 }
 .displayItems-clear{
-    color: white;
+    color: black;
     background: transparent;
-    border: 3px solid white;
+    border: 3px solid black;
     transition: all 2s ease;
 }
 .displayItems-clear{
     background: #4D7EA8;
-    color:white;
+    color:black;
     outline:none;
     background: transparent;
 }
@@ -133,5 +133,5 @@ body{
     }
 }
 .lobster{
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
