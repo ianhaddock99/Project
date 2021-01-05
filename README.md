@@ -1,4 +1,9 @@
-## Across This Recipe <https://loving-hugle-ae78b2.netlify.app> 
+## Across This Recipe 
+
+## Netlify <https://loving-hugle-ae78b2.netlify.app> 
+
+## AWS <http://ianproject99.s3-website.us-east-2.amazonaws.com>
+
 
 This is simple app allows the user to search for different meal ideas and return the ingredients, nutrition info and recipe information. It has a map that uses a bounding box around denver to show various grocery stores and supermarkets. There is also a shopping list where ingredients can be typed in and saved to a list.
 
@@ -26,6 +31,7 @@ Implement a shopping list where you can type in the ingredients you need for you
 **Code Snippets**
 
 ```
+////////GENERATE CARD FOR 5 RANDOM ITEMS//////////
 function useApiData(data){
     document.querySelector("#content").innerHTML = "";
     const numberAlreadyGenerated = []
@@ -123,5 +129,5 @@ function showAction(element, text, value){
 
 - Cedael White: UX, Shopping List
 - Zachary Akers: UX, Mapbox API
-- Ian Haddock: UX, Edamam API
+- Ian Haddock: UX, Edamam API, Read Me
 
